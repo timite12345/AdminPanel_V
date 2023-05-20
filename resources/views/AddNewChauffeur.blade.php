@@ -15,7 +15,7 @@
 		<div class="form-v9-content" style="background-image: url('images/form-v9.jpg')">
 			<form class="form-detail" action="{{route('addChauffeur')}}" method="POST">
                 @csrf
-				<h2>Registration Form</h2>
+				<h2>Enregistrer Chauffeur</h2>
 				<div class="form-row-total">
 					<div class="form-row">
 						<input type="text" name="nom" id="full-name" class="input-text" placeholder="Nom" required>
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 				<div class="form-row-total">
-					
+
 					<div class="form-row">
 						<input type="text" name="estDisponible" id="comfirm-password" class="input-text" placeholder="estDisponible" required>
 					</div>

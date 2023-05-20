@@ -67,7 +67,7 @@
                 </a>
               </li>
                  <li class="nav-item">
-                <a href="ListesFactures" class="nav-link">
+                <a href="{{ url('ListesFactures') }}" class="nav-link">
                   <i class="fas fa-edit	"></i>
                   <p> Gérer Factures</p>
                 </a>

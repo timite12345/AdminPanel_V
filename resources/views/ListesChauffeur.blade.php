@@ -49,7 +49,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('AjouterHopital') }}" class="nav-link">
+                <a href="{{ url('ListesHopitals') }}" class="nav-link">
                   <i class="fa fa-medkit"></i>
                   <p>Ajouter Hopital</p>
                 </a>
@@ -68,7 +68,7 @@
               </li>
 
                 <li class="nav-item">
-                <a href="{{ url('ListesFacture') }}" class="nav-link">
+                <a href="{{ url('ListesFactures') }}" class="nav-link">
                   <i class="fa fa-edit"></i>
                   <p> Gérer Factures </p>
                 </a>

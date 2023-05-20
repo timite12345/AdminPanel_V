@@ -50,7 +50,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/project-add.html" class="nav-link">
+                <a href="{{ url('ListesHopitals') }}" class="nav-link">
                   <i class="fa fa-medkit"></i>
                   <p>Ajouter Hopital</p>
                 </a>
@@ -69,7 +69,7 @@
               </li>
 
                 <li class="nav-item">
-                <a href="{{ url('ListesChauffeur') }}" class="nav-link">
+                <a href="{{ url('EditerFactures') }}" class="nav-link">
                   <i class="fa fa-edit"></i>
                   <p> Gérer Factures </p>
                 </a>
@@ -168,7 +168,7 @@
           <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
              <p class="bg-white-700 font-semibold text-lg text-gray-800 leading-tight">
             Listes des Factures
-            <a href="{{ url('AjouterFacture') }}" role="button" class="bg-blue-400 hover:bg-blue-700 text-white
+            <a href="{{ url('EditerFactures') }}" role="button" class="bg-blue-400 hover:bg-blue-700 text-white
             font-bold py-1 px-2 rounded float-right">Ajouter Nouvelles Factures</a>
         </p>
             <table class="table-fixed">
