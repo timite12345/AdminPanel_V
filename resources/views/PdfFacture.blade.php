@@ -30,8 +30,8 @@
         </div>
        @endforeach
         <div id="invoice">
-          {{--  <h3>Facture N°{{$fac}} {{$da}}</h3>
-          <div class="date">Date de facturation: {{$date}}</div>  --}}
+          {{--  <h3>Facture N°{{$fac}} {{$da}}</h3>  --}}
+          {{--  <div class="date">Date de facturation: {{$date}}</div>  --}}
         </div>
       </div>
       <table border="0" cellspacing="0" cellpadding="0" >
@@ -48,7 +48,7 @@
         <tbody>
           @foreach($missions as $mission)
           <tr>
-            <td class="no">{{$i}}</td>
+            {{--  <td class="no">{{$i}}</td>  --}}
             <td class="desc">
                 <span>{{$mission->nom}} {{$mission->prenom}}</span><br>
                 <span>{{$mission->adresse}} </span><br>
@@ -60,36 +60,38 @@
             <td class="unit">{{$mission->condTransp}}</td>
             <td class="total">{{$mission->montant}}€</td>
           </tr>
-          {{$i=$i+1}}
-          {{$prixht = $prixht + $mission->prix}}
+          {{--  {{$i=$i+1}}
+          {{$prixht = $prixht + $mission->prix}}  --}}
           @endforeach
 
         </tbody>
-        {{--  <tfoot>
+        <tfoot>
           <tr>
             <td colspan="2"></td>
             <td colspan="2">TOTAL HT</td>
-            <td>{{$prixht}}€</td>
+            {{--  <td>{{$prixht}}€</td>  --}}
           </tr>
           <tr>
             <td colspan="2"></td>
             <td colspan="2">TAX 25%</td>
-            <td>{{($prixht*25)/100}}€</td>
+            {{--  <td>{{($prixht*25)/100}}€</td>  --}}
           </tr>
           <tr>
             <td colspan="2"></td>
             <td colspan="2">TOTAL TTC</td>
-            <td>{{$prixht-($prixht*25)/100}}€</td>
+            {{--  <td>{{$prixht-($prixht*25)/100}}€</td>  --}}
           </tr>
         </tfoot>
       </table>
-      <div id="notices">
+      {{--  <div id="notices">
         <div>NOTICE:</div>
         <div class="notice">Des frais financiers de 1,5% seront imputés sur les soldes impayés après 30 jours.</div>
-      </div>
+      </div>  --}}
     </main>
-    <footer>
+    {{--  <footer>
     La facture a été créée sur un ordinateur et est valide sans la signature et le sceau.
     </footer>  --}}
   </body>
+
+
 </html>
